@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RAR", "RAR\RAR.csproj", "{7D6794D2-91AA-49BF-A519-06F5BDBB486E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAR.Test", "RAR.Test\RAR.Test.csproj", "{E57F4953-18FC-4A9B-91C1-F00A07008DC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D6794D2-91AA-49BF-A519-06F5BDBB486E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D6794D2-91AA-49BF-A519-06F5BDBB486E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D6794D2-91AA-49BF-A519-06F5BDBB486E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D6794D2-91AA-49BF-A519-06F5BDBB486E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E57F4953-18FC-4A9B-91C1-F00A07008DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E57F4953-18FC-4A9B-91C1-F00A07008DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E57F4953-18FC-4A9B-91C1-F00A07008DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E57F4953-18FC-4A9B-91C1-F00A07008DC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C2473845-BF83-453F-B35E-D5BE794187FA}
+	EndGlobalSection
+EndGlobal
