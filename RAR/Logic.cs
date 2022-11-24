@@ -7,42 +7,23 @@ namespace rar
     public class Logic
     {
 
-        public static string Views(List<string> Words)
+        public static List<string> Views(List<string> Words)
         {
-            List<string> View = new List<string>(Words);
-            {
+            List<string> result = Words;
+            
+            //Return the list that came in 
+               
+            
+            Words.Sort();
+            result.AddRange(Words);
 
-
-                List<string> list = new List<string>(Words);
-                foreach (var item in list)
-                {
-                    return item;
-                }
-
-                List<string> sort = new List<string>(Words);
-                Words.Sort();
-                foreach (var item in sort)
-                {
-                    return item;
-                }
-                List<string> reverse = new List<string>(Words);
-
-                Words.Reverse();
-                foreach (var item in reverse)
-                {
-                    return item;
-                }
-
-                List<string> random = new List<string>(Words);
-                Words.OrderBy(x => x + 1);
-                foreach (var item in random)
-                {
-                    return item;
-                }
-
-            }
-
-            return View;
+            Words.Reverse();
+            result.AddRange(Words);
+           
+            //Words.OrderBy(x => x + 1);
+            //result.AddRange(Words);
+            
+            return result;
         }
 
 

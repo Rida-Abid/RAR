@@ -4,9 +4,9 @@ using System.Linq;
 
 namespace rar
 {
-    class program
+    class Program
     {
-        static char Main(string[] args)
+        static void Main(string[] args)
         {
             List<string> Words = new List<string>();
             for (int i = 0; i < 5; i++)
@@ -17,10 +17,10 @@ namespace rar
 
             }
             var results = Logic.Views(Words);
-            foreach (var View in results)
+            foreach (var result in results)
             {
 
-                Console.WriteLine(View);
+                Console.WriteLine(result);
             }
 
         }
