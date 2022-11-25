@@ -7,7 +7,7 @@ namespace rar
     public class Logic
     {
 
-        public static List<string> Views(List<string> Words)
+        public List<string> Views(List<string> Words)
         {
             List<string> result = Words;
             

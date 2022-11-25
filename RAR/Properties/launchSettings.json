@@ -2,8 +2,7 @@
   "profiles": {
     "RAR": {
       "commandName": "Project",
-      "commandLineArgs": "ant rat bat cat sat",
-      "workingDirectory": "C:\\Users\\ridaa\\Source-20221121T140937Z-001\\Source\\repos\\RAR\\RAR\\bin\\Debug\\net6.0"
+      "commandLineArgs": "ant rat bat cat sat"
     }
   }
 }
