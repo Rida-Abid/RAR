@@ -16,30 +16,55 @@ namespace rar
                It should do just 1 thing very well.
             4. Consider how you would do random and lets discuss different ways to achieve this. (hint: maybe extend the List class)
             5. Try to create blank methods with no code inside, and then write the test scripts, before writing the code inside the methods.
-            6. Cann the lists be displayed separately, ie with a blank line between them.
-         
+            6. Can the lists be displayed separately, ie with a blank line between them.
+            
+            1. Check if user has input words
+            2. Create a list 
+            3. Store the values input by user  
+            4. For random list use rnd(0, args.Length)
+
+            
          */
 
         public static void Main(string[] args)
         {
-            List<string> Words = new List<string>();
-            for (int i = 0; i < 5; i++)
+                     
+            if (args.Length == 0)
             {
-                Console.WriteLine("Please enter a word");
-                var input = Console.ReadLine();
-                Words.Add(input);
+                Console.WriteLine("Please enter in some words");
+            }
+            else
+            {
+                var logic = new Logic();
+                List<string> Words = args.ToList();
+
+                DisplayValues("Displaying origional list", Words);
+
+                DisplayValues("Displaying sorted list", logic.SortedList(Words));
+
+                DisplayValues("Displaying list in reverse", logic.Reverse(Words));
+
+                DisplayValues("Displaying random words from the list", logic.Randomise(Words));
+
             }
 
-            var results = new Logic().Views(Words);
-            foreach (var result in results)
-            {
-                Console.WriteLine(result);
-            }
             Console.WriteLine("Press enter to exit.");
             Console.ReadLine();
 
         }
 
+
+        private static void DisplayValues(string heading, List<string> Words)
+        {
+            Console.WriteLine(heading);
+            Console.WriteLine("-----------------------------");
+            foreach (var word in Words)
+            {
+                Console.WriteLine(word);
+            }
+            Console.WriteLine("");
+            Console.WriteLine("");
+        }
     }
 
 
